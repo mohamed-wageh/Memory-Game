@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="container">
+    <div class="control-buttons">
+      <span>Start Game</span>
+    </div>
+    <div class="info-container">
+      <div class="name">Hello: <span></span></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+    <div class="memory-game-blocks">
+      <div class="game-block" data-icon="facebook">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #3e62a9;">
+            <i class="fa-brands fa-facebook fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="facebook">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #3e62a9;">
+            <i class="fa-brands fa-facebook fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="twitter">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #03a0e8;">
+            <i class="fa-brands fa-twitter fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="twitter">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #03a0e8;">
+            <i class="fa-brands fa-twitter fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="tiktok">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-tiktok fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="tiktok">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-tiktok fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="linkedin">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #202124;">
+            <i class="fa-brands fa-linkedin fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="linkedin">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #202124;">
+            <i class="fa-brands fa-linkedin fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="discord">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #8596f2;">
+            <i class="fa-brands fa-discord fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="discord">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #8596f2;">
+            <i class="fa-brands fa-discord fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="youtube">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #f20000;">
+            <i class="fa-brands fa-youtube fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="youtube">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #f20000;">
+            <i class="fa-brands fa-youtube fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="instagram">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #f05505;">
+            <i class="fa-brands fa-instagram fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="instagram">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #f05505;">
+            <i class="fa-brands fa-instagram fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="poo">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #684221;">
+            <i class="fa-solid fa-poo fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="poo">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #684221;">
+            <i class="fa-solid fa-poo fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="star">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #efa623;">
+            <i class="fa-solid fa-star fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="star">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #efa623;">
+            <i class="fa-solid fa-star fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="bolt">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #f2c744;">
+            <i class="fa-solid fa-bolt fa-8x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="game-block" data-icon="bolt">
+        <div class="face front"></div>
+        <div class="face back">
+          <span style="color: #f2c744;">
+            <i class="fa-solid fa-bolt fa-8x"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <audio id="success" src="audio/tada-fanfare-a-6313.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/negative_beeps-6008.mp3" preload="auto"></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
